@@ -711,6 +711,10 @@
     for (int i = 0; i < self.numberOfSegments; i++) {
         [self addButtonForSegment:i];
     }
+
+    if (self.window) {
+        [self configureSegments];
+    }
 }
 
 - (void)addButtonForSegment:(NSUInteger)segment
